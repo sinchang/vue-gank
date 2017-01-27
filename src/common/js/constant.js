@@ -1,5 +1,5 @@
 const constant = {
-  APIURL: 'http://gank.io/api/'
+  APIURL: 'https://gank.io/api/'
 }
 
 export default constant

@@ -71,7 +71,6 @@
         }
         this.page--;
         this.fetchData();
-        window.scrollTo(0, 0);
       },
       next() {
         this.page++;
@@ -80,6 +79,3 @@
     }
   }
 </script>
-
-<style lang="css">
-</style>

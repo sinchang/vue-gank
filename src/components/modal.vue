@@ -32,15 +32,15 @@
                   <label class="col-lg-2 control-label">干货类型</label>
                   <div class="col-lg-10">
                     <select class="form-control" v-model='type'>
-                                            <option value="Android">Android</option>
-                                            <option value="iOS">iOS</option>
-                                            <option value="休息视频">休息视频</option>
-                                            <option value="福利">福利</option>
-                                            <option value="拓展资源">拓展资源</option>
-                                            <option value="前端">前端</option>
-                                            <option value="瞎推荐">瞎推荐</option>
-                                            <option value="App">App</option>
-                                        </select>
+                        <option value="Android">Android</option>
+                        <option value="iOS">iOS</option>
+                        <option value="休息视频">休息视频</option>
+                        <option value="福利">福利</option>
+                        <option value="拓展资源">拓展资源</option>
+                        <option value="前端">前端</option>
+                        <option value="瞎推荐">瞎推荐</option>
+                        <option value="App">App</option>
+                    </select>
                   </div>
                 </div>
               </fieldset>
