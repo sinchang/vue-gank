@@ -1,7 +1,7 @@
 'use strict'
 
 const routers = [{
-  path: '/:day',
+  path: '/day/:day',
   name: 'home',
   component(resolve) {
     require.ensure(['./components/home.vue'], () => {

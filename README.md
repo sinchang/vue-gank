@@ -1,6 +1,6 @@
-# vue-gank-io
+# vue-gank
 
-> A Vue.js project
+> 基于 Vue 的一个网页版干货集中营
 
 ## Build Setup
 
