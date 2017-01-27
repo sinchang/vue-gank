@@ -40,6 +40,14 @@
       '$route': 'fetchData'
     },
     created() {
+      let paramsDay = util.formatDate(this.$route.params.day);
+
+      if (util.isDate(paramsDay)) {
+        this.day = paramsDay;
+      } else {
+        this.day = util.formatDate(new Date());
+      }
+
       this.fetchData();
     },
     updated() {
@@ -51,12 +59,6 @@
     methods: {
       fetchData() {
         this.loading = true;
-        let paramsDay = util.formatDate(this.$route.params.day);
-        if (util.isDate(paramsDay)) {
-          this.day = paramsDay;
-        } else {
-          this.day = util.formatDate(new Date());
-        }
         axios.get(constant.APIURL + 'history/content/day/' + this.day)
           .then((res) => {
             this.isEmpty = false;
@@ -81,6 +83,7 @@
       },
       prev() {
         this.day = util.changeDate(this.day, 'subtract', 1);
+        console.log(this.day)
         this.fetchData();
       },
       next() {

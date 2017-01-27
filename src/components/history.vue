@@ -23,7 +23,7 @@
     components: {
       loading
     },
-    created() {
+    mounted() {
       this.loading = true;
       axios.get(constant.APIURL + 'day/history')
         .then((res) => {
