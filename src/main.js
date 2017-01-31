@@ -8,7 +8,6 @@ import gank from './common/css/gank.css'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  'mode': 'history',
   routes
 });
 

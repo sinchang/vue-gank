@@ -1,6 +1,8 @@
 # vue-gank
 
-> 基于 Vue 的一个网页版干货集中营
+> gank.io clone built with Vue & Vue Router
+
+[Live Demo](http://vue-gank.sinchang.me/)
 
 ## Build Setup
 

@@ -83,7 +83,6 @@
       },
       prev() {
         this.day = util.changeDate(this.day, 'subtract', 1);
-        console.log(this.day)
         this.fetchData();
       },
       next() {

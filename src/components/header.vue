@@ -3,7 +3,7 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" @click="navbarToggle">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -65,6 +65,19 @@
     data() {
       return {
         isShow: false
+      }
+    },
+    methods: {
+      navbarToggle() {
+        var navbar = document.querySelector('.navbar-toggle');
+			  var collapse = document.querySelector('.navbar-collapse');
+        if (navbar.classList.contains('collapsed')) {
+					collapse.classList.add('collapse');
+					navbar.classList.remove('collapsed');
+				} else {
+          navbar.classList.add('collapsed');
+  				collapse.classList.remove('collapse');
+        }
       }
     },
     components: {
